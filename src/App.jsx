@@ -1,4 +1,5 @@
 import Exm from './stateInClass'
+import Exm1 from './stateInFunction'
 import './App.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
      <Exm/> 
+     <Exm1/>
     </>
   )
 }
