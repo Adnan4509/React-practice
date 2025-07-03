@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-     <Exm/> 
-     <Exm1/>
+     <Exm emotion="Happy"/> 
+     <Exm1 emotion="Energetic"/>
     </>
   )
 }
