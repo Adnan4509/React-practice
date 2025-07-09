@@ -12,8 +12,8 @@ function App() {
 
 // using useCallback to freeze function
   const getAdjective = useCallback(() =>{
-    return "another" + count                    // Here the function is freezed and will only render once
-  },[])                                         // the output will be another 0 without dependency
+    return "another" + count                    // Here the function will re-render whenever count is changed
+  },[count])                                       
 
   return (
     <>
