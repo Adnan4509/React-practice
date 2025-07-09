@@ -1,10 +1,11 @@
 import { memo } from "react"        
 
-const Navbar = ({adjective}) => {
+const Navbar = ({adjective, getAdjective}) => {
     console.log("Navbar is rendered")               //Here navbar is rendered whenever count is changed in app.jsx
     return(
         <div>
             I am a {adjective} navbar.
+            <button onClick={() => {getAdjective}}>Click for Change</button>
         </div>
     )
 }
