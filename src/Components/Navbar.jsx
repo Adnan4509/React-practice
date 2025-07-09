@@ -1,4 +1,4 @@
-
+import { memo } from "react"        
 
 const Navbar = ({adjective}) => {
     console.log("Navbar is rendered")               //Here navbar is rendered whenever count is changed in app.jsx
@@ -9,4 +9,4 @@ const Navbar = ({adjective}) => {
     )
 }
 
-export default Navbar
+export default memo(Navbar)    // the memo method allows the component to re-render only when its changed
