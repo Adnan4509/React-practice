@@ -1,21 +1,16 @@
 import './App.css'
 import { useState, useEffect} from 'react'
-import Navbar from './Hooks/effect'
+import Navbar from './Components/Navbar'
+
 
 function App() {
   const [count, setCount] = useState(0)
-  const [color, setColor] = useState(0)
 
-  useEffect(()=> {
-    alert("Count was changed")
-    setColor(color + 1)
-  },[count])
 
   return (
     <>
-     <Navbar color = {"Dark " + "Green" + color}></Navbar>  
-      {/* comment out the above Navbar component to see the effect of cleanUp function */}
-      <div className="card">
+     <Navbar adjective={"good"}></Navbar>  {/*whenever count is changed this component is also rendered */}
+    <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
