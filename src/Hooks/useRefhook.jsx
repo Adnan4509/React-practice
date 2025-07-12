@@ -1,12 +1,15 @@
-// import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 const Reference = () => {
-    let a = 1
-    a = a + 1;
+    const a = useRef(0)
+    
+    useEffect(() => {
+        a.current =  a.current + 1
 
-    return(
+    })
+    return(                         //Now the value of a changes with respect to each render
         <div>
-            <p>{a}</p>
+            <p>{a.current}</p>   
         </div>
     )
 }
