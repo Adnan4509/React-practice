@@ -1,15 +1,15 @@
-import { useEffect, useRef } from "react"
+import { useEffect} from "react"
 
 const Reference = () => {
-    const a = useRef(0)
+    
     
     useEffect(() => {
-        a.current =  a.current + 1
+        console.log("rendering...")
+    },)
 
-    })
     return(                         //Now the value of a changes with respect to each render
         <div>
-            <p>{a.current}</p>   
+            <h1>hi</h1>
         </div>
     )
 }
